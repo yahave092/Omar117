@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+  }
+  nav {
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 136, 255, 0.766);
+    width: 100%;
+  }
+  .fondo {
+    background-color: white;
+  }
+  
+  .logo {
+    background: url(imagenes/TecMedi-removebg-preview.png)
+      no-repeat 50% 50%;
+    background-size: contain;
+    width: 300px;
+    height: 100px;
+    float: left;
+  }
+  .menu {
+    position: absolute;
+    right: 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  .menu a:hover {
+    color: blueviolet;
+  }
+  header {
+    width: 100%;
+    height: 600px;
+  
+    background: url(imagenes/images.jpeg)
+      no-repeat 50% 50%;
+    background-size: cover;
+    margin-top: 80px;
+  }
+  .boton {
+    display: none;
+    position: absolute;
+    right: 20px;
+  }
+  .boton:hover > span {
+    background-color: #e85860;
+  }
+  .boton span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  @media only screen and (max-width: 550px) {
+    nav {
+      overflow: visible;
+    }
+    .menu {
+      width: 100%;
+      right: 0;
+      top: 80px;
+      background: #f1f1f1e6;
+      overflow: hidden;
+      max-height: 0;
+    }
+    .menu a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+    .boton {
+      display: block;
+      cursor: pointer;
+    }
+    .show {
+      max-height: 500px;
+    }
+  }
+  .p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+  }
